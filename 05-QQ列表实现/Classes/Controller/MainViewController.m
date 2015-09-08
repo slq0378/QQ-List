@@ -12,6 +12,7 @@
 #import "SLQFriend.h"
 #import "SLQFriendGroup.h"
 #import "SLQFriendCell.H"
+#import "SLQHeader.h"
 
 
 @interface MainViewController ()
@@ -25,8 +26,17 @@
     [super viewDidLoad];
     
     self.tableView.sectionHeaderHeight = 44;
-    
 }
+/**
+ *  隐藏状态栏
+ *
+ *  @return YES 是隐藏。默认是no
+ */
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 #pragma mark - 懒加载
 - (NSArray *)friendList
 {
@@ -38,12 +48,10 @@
         NSArray *friends = [NSArray arrayWithContentsOfFile:path];
         
         NSMutableArray *mutableFriends = [NSMutableArray array];
-        
         for (NSDictionary *dict in friends) {
             SLQFriendGroup *group = [SLQFriendGroup FriendGroupWithDictionary:dict];
             [mutableFriends addObject:group];
         }
-        NSLog(@"%@",mutableFriends);
         _friendList = mutableFriends;
     }
     return  _friendList;
@@ -68,20 +76,23 @@
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 封装cell初始化
+    // 1、生成cell
     SLQFriendCell *cell = [SLQFriendCell cellWithTableView:tableView];
-    // 传递模型
+    // 2、传递SLQFriend模型
     SLQFriendGroup *group = self.friendList[indexPath.section];
     cell.Friend = group.friends[indexPath.row];
-    
+    // 3、返回cell
     return cell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *header = [[UIView alloc] init];
-    header.backgroundColor = [UIColor redColor];
-    
+    // 1、自定义header
+    SLQHeader *header = [SLQHeader headerWithTableView:tableView];
+    // 2、传递模型
+    SLQFriendGroup *group = self.friendList[section];
+    header.friendGroup = group;
+    // 3、返回头部
     return header;
 }
 

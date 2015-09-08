@@ -10,6 +10,7 @@
 		E48B30D61B9ED1C50033A3AE /* SLQFriendGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30D51B9ED1C50033A3AE /* SLQFriendGroup.m */; settings = {ASSET_TAGS = (); }; };
 		E48B30D91B9ED20C0033A3AE /* SLQFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30D81B9ED20C0033A3AE /* SLQFriend.m */; settings = {ASSET_TAGS = (); }; };
 		E48B30DC1B9ED9620033A3AE /* SLQFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30DB1B9ED9620033A3AE /* SLQFriendCell.m */; settings = {ASSET_TAGS = (); }; };
+		E48B30DF1B9EE0870033A3AE /* SLQHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30DE1B9EE0870033A3AE /* SLQHeader.m */; settings = {ASSET_TAGS = (); }; };
 		E48EF1E21B9EC2BA009097ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E11B9EC2BA009097ED /* main.m */; };
 		E48EF1E51B9EC2BA009097ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E41B9EC2BA009097ED /* AppDelegate.m */; };
 		E48EF1EB1B9EC2BA009097ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF1E91B9EC2BA009097ED /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 		E48B30D81B9ED20C0033A3AE /* SLQFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLQFriend.m; sourceTree = "<group>"; };
 		E48B30DA1B9ED9620033A3AE /* SLQFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLQFriendCell.h; sourceTree = "<group>"; };
 		E48B30DB1B9ED9620033A3AE /* SLQFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLQFriendCell.m; sourceTree = "<group>"; };
+		E48B30DD1B9EE0870033A3AE /* SLQHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLQHeader.h; sourceTree = "<group>"; };
+		E48B30DE1B9EE0870033A3AE /* SLQHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLQHeader.m; sourceTree = "<group>"; };
 		E48EF1DD1B9EC2BA009097ED /* 05-QQ列表实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-QQ列表实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EF1E11B9EC2BA009097ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		E48EF1E31B9EC2BA009097ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 			children = (
 				E48B30DA1B9ED9620033A3AE /* SLQFriendCell.h */,
 				E48B30DB1B9ED9620033A3AE /* SLQFriendCell.m */,
+				E48B30DD1B9EE0870033A3AE /* SLQHeader.h */,
+				E48B30DE1B9EE0870033A3AE /* SLQHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				E48EF1EE1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld in Sources */,
 				E48B30DC1B9ED9620033A3AE /* SLQFriendCell.m in Sources */,
 				E4A675761B9EC3EB00054211 /* MainViewController.m in Sources */,
+				E48B30DF1B9EE0870033A3AE /* SLQHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
