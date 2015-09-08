@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class SLQFriendGroup;
+@class SLQFriend;
 
 @interface SLQFriendCell : UITableViewCell
 
 /**模型数组*/
-@property (nonatomic, strong) SLQFriendGroup *friendGroup;
+@property (nonatomic, strong) SLQFriend *Friend;
 
 
 + (SLQFriendCell *)cellWithTableView:(UITableView *)tableView;

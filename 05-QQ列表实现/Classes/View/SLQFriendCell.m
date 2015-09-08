@@ -12,12 +12,16 @@
 
 @implementation SLQFriendCell
 
-- (void)setFriendGroup:(SLQFriendGroup *)friendGroup
+- (void)setFriend:(SLQFriend *)Friend
 {
-    _friendGroup = friendGroup;
+    _Friend = Friend;
  
-    self.textLabel.text = friendGroup.name;
+    self.textLabel.text = Friend.name;
+    self.detailTextLabel.text = Friend.intro;
+    self.imageView.image = [UIImage imageNamed:Friend.icon];
+    self.textLabel.textColor = Friend.isVip ? [UIColor redColor] : [UIColor blackColor];
 }
+
 + (SLQFriendCell *)cellWithTableView:(UITableView *)tableView
 {
     static NSString *ID = @"Cell";

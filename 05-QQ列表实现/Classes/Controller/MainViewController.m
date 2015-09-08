@@ -72,7 +72,7 @@
     SLQFriendCell *cell = [SLQFriendCell cellWithTableView:tableView];
     // 传递模型
     SLQFriendGroup *group = self.friendList[indexPath.section];
-    cell.friendGroup = group;
+    cell.Friend = group.friends[indexPath.row];
     
     return cell;
 }
