@@ -14,6 +14,12 @@
 /**用户分组*/
 @property (nonatomic, strong) SLQFriendGroup *friendGroup;
 
+/**按钮*/
+@property (nonatomic, weak) UIButton *contentButton;
+/** 标签*/
+@property (nonatomic, weak) UILabel *onlineLabel;
+
+
 + (instancetype)headerWithTableView:(UITableView *)tableView;
 
 @end
