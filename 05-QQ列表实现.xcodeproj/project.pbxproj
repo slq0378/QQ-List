@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		E48EF1E21B9EC2BA009097ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E11B9EC2BA009097ED /* main.m */; };
 		E48EF1E51B9EC2BA009097ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E41B9EC2BA009097ED /* AppDelegate.m */; };
-		E48EF1E81B9EC2BA009097ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E71B9EC2BA009097ED /* ViewController.m */; };
 		E48EF1EB1B9EC2BA009097ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF1E91B9EC2BA009097ED /* Main.storyboard */; };
 		E48EF1EE1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1EC1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld */; };
 		E48EF1F01B9EC2BA009097ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48EF1EF1B9EC2BA009097ED /* Assets.xcassets */; };
 		E48EF1F31B9EC2BA009097ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF1F11B9EC2BA009097ED /* LaunchScreen.storyboard */; };
 		E48EF1FE1B9EC2BA009097ED /* _5_QQ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1FD1B9EC2BA009097ED /* _5_QQ____Tests.m */; };
 		E48EF2091B9EC2BA009097ED /* _5_QQ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF2081B9EC2BA009097ED /* _5_QQ____UITests.m */; };
+		E48EF21C1B9EC33B009097ED /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = E48EF21B1B9EC33B009097ED /* friends.plist */; settings = {ASSET_TAGS = (); }; };
+		E4A675761B9EC3EB00054211 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A675751B9EC3EB00054211 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,9 @@
 
 /* Begin PBXFileReference section */
 		E48EF1DD1B9EC2BA009097ED /* 05-QQ列表实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-QQ列表实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E48EF1E11B9EC2BA009097ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E48EF1E31B9EC2BA009097ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E48EF1E41B9EC2BA009097ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E48EF1E61B9EC2BA009097ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E48EF1E71B9EC2BA009097ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E48EF1E11B9EC2BA009097ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		E48EF1E31B9EC2BA009097ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		E48EF1E41B9EC2BA009097ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		E48EF1EA1B9EC2BA009097ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48EF1ED1B9EC2BA009097ED /* _5_QQ____.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_5_QQ____.xcdatamodel"; sourceTree = "<group>"; };
 		E48EF1EF1B9EC2BA009097ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,9 @@
 		E48EF2041B9EC2BA009097ED /* 05-QQ列表实现UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-QQ列表实现UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EF2081B9EC2BA009097ED /* _5_QQ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_5_QQ____UITests.m"; sourceTree = "<group>"; };
 		E48EF20A1B9EC2BA009097ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48EF21B1B9EC33B009097ED /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		E4A675741B9EC3EB00054211 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E4A675751B9EC3EB00054211 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +105,9 @@
 		E48EF1DF1B9EC2BA009097ED /* 05-QQ列表实现 */ = {
 			isa = PBXGroup;
 			children = (
-				E48EF1E31B9EC2BA009097ED /* AppDelegate.h */,
-				E48EF1E41B9EC2BA009097ED /* AppDelegate.m */,
-				E48EF1E61B9EC2BA009097ED /* ViewController.h */,
-				E48EF1E71B9EC2BA009097ED /* ViewController.m */,
+				E48EF2161B9EC319009097ED /* Classes */,
 				E48EF1E91B9EC2BA009097ED /* Main.storyboard */,
 				E48EF1EF1B9EC2BA009097ED /* Assets.xcassets */,
-				E48EF1F11B9EC2BA009097ED /* LaunchScreen.storyboard */,
-				E48EF1F41B9EC2BA009097ED /* Info.plist */,
-				E48EF1EC1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld */,
 				E48EF1E01B9EC2BA009097ED /* Supporting Files */,
 			);
 			path = "05-QQ列表实现";
@@ -120,7 +116,10 @@
 		E48EF1E01B9EC2BA009097ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E48EF1E11B9EC2BA009097ED /* main.m */,
+				E48EF21B1B9EC33B009097ED /* friends.plist */,
+				E48EF1F11B9EC2BA009097ED /* LaunchScreen.storyboard */,
+				E48EF1F41B9EC2BA009097ED /* Info.plist */,
+				E48EF1EC1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +140,50 @@
 				E48EF20A1B9EC2BA009097ED /* Info.plist */,
 			);
 			path = "05-QQ列表实现UITests";
+			sourceTree = "<group>";
+		};
+		E48EF2161B9EC319009097ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E48EF1E31B9EC2BA009097ED /* AppDelegate.h */,
+				E48EF1E41B9EC2BA009097ED /* AppDelegate.m */,
+				E48EF2171B9EC319009097ED /* Controller */,
+				E48EF2181B9EC319009097ED /* Model */,
+				E48EF2191B9EC319009097ED /* Other */,
+				E48EF21A1B9EC319009097ED /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E48EF2171B9EC319009097ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4A675741B9EC3EB00054211 /* MainViewController.h */,
+				E4A675751B9EC3EB00054211 /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E48EF2181B9EC319009097ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E48EF2191B9EC319009097ED /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E48EF1E11B9EC2BA009097ED /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E48EF21A1B9EC319009097ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +294,7 @@
 			files = (
 				E48EF1F31B9EC2BA009097ED /* LaunchScreen.storyboard in Resources */,
 				E48EF1F01B9EC2BA009097ED /* Assets.xcassets in Resources */,
+				E48EF21C1B9EC33B009097ED /* friends.plist in Resources */,
 				E48EF1EB1B9EC2BA009097ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48EF1E81B9EC2BA009097ED /* ViewController.m in Sources */,
 				E48EF1E51B9EC2BA009097ED /* AppDelegate.m in Sources */,
 				E48EF1E21B9EC2BA009097ED /* main.m in Sources */,
 				E48EF1EE1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld in Sources */,
+				E4A675761B9EC3EB00054211 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +547,7 @@
 				E48EF20F1B9EC2BA009097ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E48EF2101B9EC2BA009097ED /* Build configuration list for PBXNativeTarget "05-QQ列表实现Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +556,7 @@
 				E48EF2121B9EC2BA009097ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E48EF2131B9EC2BA009097ED /* Build configuration list for PBXNativeTarget "05-QQ列表实现UITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +565,7 @@
 				E48EF2151B9EC2BA009097ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

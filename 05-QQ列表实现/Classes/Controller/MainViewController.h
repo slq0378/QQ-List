@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  05-QQ列表实现
 //
 //  Created by Christian on 15/9/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
