@@ -11,17 +11,21 @@
 #import "SLQFriend.h"
 
 @implementation SLQFriendCell
-
+/**
+ *  setter方法
+ */
 - (void)setFriend:(SLQFriend *)Friend
 {
     _Friend = Friend;
- 
+    // 更新数据到控件上
     self.textLabel.text = Friend.name;
     self.detailTextLabel.text = Friend.intro;
     self.imageView.image = [UIImage imageNamed:Friend.icon];
     self.textLabel.textColor = Friend.isVip ? [UIColor redColor] : [UIColor blackColor];
 }
-
+/**
+ *  返回cell
+ */
 + (SLQFriendCell *)cellWithTableView:(UITableView *)tableView
 {
     static NSString *ID = @"Cell";
@@ -31,5 +35,4 @@
     }
     return cell;
 }
-
 @end

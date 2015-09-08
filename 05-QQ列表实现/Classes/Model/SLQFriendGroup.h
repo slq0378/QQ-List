@@ -16,6 +16,8 @@
 @property (nonatomic, assign) int online;
 /**分组中用户数量*/
 @property (nonatomic, copy) NSArray *friends;
+/**分组是隐藏还是展开*/
+@property (nonatomic, assign,getter=isOpened) BOOL opened;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 + (instancetype)FriendGroupWithDictionary:(NSDictionary *)dict;

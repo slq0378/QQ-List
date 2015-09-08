@@ -15,7 +15,7 @@
 #import "SLQHeader.h"
 
 
-@interface MainViewController ()
+@interface MainViewController () <SLQHeaderDelegate>
 /**朋友数组*/
 @property (nonatomic, copy) NSArray *friendList;
 @end
@@ -46,7 +46,9 @@
         // 从plist读取用户信息
         NSString *path = [[NSBundle mainBundle] pathForResource:@"friends.plist" ofType:nil];
         NSArray *friends = [NSArray arrayWithContentsOfFile:path];
-        
+         /**
+         *  字典转模型
+         */
         NSMutableArray *mutableFriends = [NSMutableArray array];
         for (NSDictionary *dict in friends) {
             SLQFriendGroup *group = [SLQFriendGroup FriendGroupWithDictionary:dict];
@@ -60,7 +62,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // 返回组数
+    // 返回分组个数
     return self.friendList.count;
 }
 
@@ -68,7 +70,10 @@
 {
     // 取出具体的组数，然后再取出每组的内容
     SLQFriendGroup *group = self.friendList[section];
-    return group.friends.count;
+    // 根据分组是否打开情况确定如何显示分组，默认关闭
+    return group.isOpened ? group.friends.count : 0;
+    
+//    return  group.friends.count;
 }
 
 /**
@@ -85,6 +90,7 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     // 1、自定义header
@@ -92,8 +98,14 @@
     // 2、传递模型
     SLQFriendGroup *group = self.friendList[section];
     header.friendGroup = group;
+    header.delegate = self;
     // 3、返回头部
     return header;
 }
 
+- (void)headerDidClicked:(SLQHeader *)header
+{
+    // 刷新表格
+    [self.tableView reloadData];
+}
 @end

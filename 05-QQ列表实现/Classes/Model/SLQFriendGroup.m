@@ -19,11 +19,11 @@
         // 2、然后再转换数组中信息
         NSMutableArray *groupFriends = [NSMutableArray array];
         for (NSDictionary *dict in self.friends) {
+            // 3、字典转模型
             SLQFriend *friend = [SLQFriend friendWithDict:dict];
             [groupFriends addObject:friend];
         }
         self.friends = groupFriends;
-        
     }
     return self;
 }
