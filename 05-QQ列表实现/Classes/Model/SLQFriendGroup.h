@@ -13,10 +13,10 @@
 /**分组名称*/
 @property (nonatomic, copy) NSString *name;
 /**在线人数*/
-@property (nonatomic, assign) BOOL *online;
+@property (nonatomic, assign) int online;
 /**分组中用户数量*/
 @property (nonatomic, copy) NSArray *friends;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
-
++ (instancetype)FriendGroupWithDictionary:(NSDictionary *)dict;
 @end

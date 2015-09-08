@@ -9,6 +9,10 @@
 
 
 #import "MainViewController.h"
+#import "SLQFriend.h"
+#import "SLQFriendGroup.h"
+#import "SLQFriendCell.H"
+
 
 @interface MainViewController ()
 /**朋友数组*/
@@ -36,8 +40,11 @@
         NSMutableArray *mutableFriends = [NSMutableArray array];
         
         for (NSDictionary *dict in friends) {
-            
+            SLQFriendGroup *group = [SLQFriendGroup FriendGroupWithDictionary:dict];
+            [mutableFriends addObject:group];
         }
+        NSLog(@"%@",mutableFriends);
+        _friendList = mutableFriends;
     }
     return  _friendList;
 }
@@ -45,12 +52,15 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    // 返回组数
+    return self.friendList.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    // 取出具体的组数，然后再取出每组的内容
+    SLQFriendGroup *group = self.friendList[section];
+    return group.friends.count;
 }
 
 /**
@@ -58,12 +68,12 @@
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"%zd",indexPath.row];
+    // 封装cell初始化
+    SLQFriendCell *cell = [SLQFriendCell cellWithTableView:tableView];
+    // 传递模型
+    SLQFriendGroup *group = self.friendList[indexPath.section];
+    cell.friendGroup = group;
+    
     return cell;
 }
 

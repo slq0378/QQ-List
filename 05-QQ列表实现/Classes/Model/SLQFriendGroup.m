@@ -20,9 +20,15 @@
         NSMutableArray *groupFriends = [NSMutableArray array];
         for (NSDictionary *dict in self.friends) {
             SLQFriend *friend = [SLQFriend friendWithDict:dict];
+            [groupFriends addObject:friend];
         }
+        self.friends = groupFriends;
         
     }
     return self;
+}
++ (instancetype)FriendGroupWithDictionary:(NSDictionary *)dict
+{
+    return [[self alloc] initWithDictionary:dict];
 }
 @end
