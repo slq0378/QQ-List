@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48B30D61B9ED1C50033A3AE /* SLQFriendGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30D51B9ED1C50033A3AE /* SLQFriendGroup.m */; settings = {ASSET_TAGS = (); }; };
+		E48B30D91B9ED20C0033A3AE /* SLQFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = E48B30D81B9ED20C0033A3AE /* SLQFriend.m */; settings = {ASSET_TAGS = (); }; };
 		E48EF1E21B9EC2BA009097ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E11B9EC2BA009097ED /* main.m */; };
 		E48EF1E51B9EC2BA009097ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E48EF1E41B9EC2BA009097ED /* AppDelegate.m */; };
 		E48EF1EB1B9EC2BA009097ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48EF1E91B9EC2BA009097ED /* Main.storyboard */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E48B30D41B9ED1C50033A3AE /* SLQFriendGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLQFriendGroup.h; sourceTree = "<group>"; };
+		E48B30D51B9ED1C50033A3AE /* SLQFriendGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLQFriendGroup.m; sourceTree = "<group>"; };
+		E48B30D71B9ED20C0033A3AE /* SLQFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLQFriend.h; sourceTree = "<group>"; };
+		E48B30D81B9ED20C0033A3AE /* SLQFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLQFriend.m; sourceTree = "<group>"; };
 		E48EF1DD1B9EC2BA009097ED /* 05-QQ列表实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-QQ列表实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48EF1E11B9EC2BA009097ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		E48EF1E31B9EC2BA009097ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +173,10 @@
 		E48EF2181B9EC319009097ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E48B30D41B9ED1C50033A3AE /* SLQFriendGroup.h */,
+				E48B30D51B9ED1C50033A3AE /* SLQFriendGroup.m */,
+				E48B30D71B9ED20C0033A3AE /* SLQFriend.h */,
+				E48B30D81B9ED20C0033A3AE /* SLQFriend.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +332,8 @@
 			files = (
 				E48EF1E51B9EC2BA009097ED /* AppDelegate.m in Sources */,
 				E48EF1E21B9EC2BA009097ED /* main.m in Sources */,
+				E48B30D91B9ED20C0033A3AE /* SLQFriend.m in Sources */,
+				E48B30D61B9ED1C50033A3AE /* SLQFriendGroup.m in Sources */,
 				E48EF1EE1B9EC2BA009097ED /* _5_QQ____.xcdatamodeld in Sources */,
 				E4A675761B9EC3EB00054211 /* MainViewController.m in Sources */,
 			);
